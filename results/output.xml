@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20230718 20:58:34.140" rpa="false" schemaversion="4">
+<suite id="s1" name="QATest" source="/Users/user/Desktop/Projects/QATest">
+<suite id="s1-s1" name="Ressources" source="/Users/user/Desktop/Projects/QATest/Ressources">
+<suite id="s1-s1-s1" name="Main" source="/Users/user/Desktop/Projects/QATest/Ressources/main.robot">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230718 20:58:34.335" level="INFO">Opening browser 'safari' to base url 'https://www.auctionexport.com/en/Profile/LogIn'.</msg>
+<status status="PASS" starttime="20230718 20:58:34.334" endtime="20230718 20:58:39.629"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Test Case 0" line="12">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230718 20:58:39.632" endtime="20230718 20:58:39.674"/>
+</kw>
+<kw name="Login" library="command">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=id_Email_Field</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 20:58:39.677" level="INFO">Typing text 'thiaremohamed.mt@gmail.com' into text field 'id=id_Email_Field'.</msg>
+<status status="PASS" starttime="20230718 20:58:39.675" endtime="20230718 20:58:40.007"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=id_Password_Field</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 20:58:40.009" level="INFO">Typing text 'qwerty123' into text field 'id=id_Password_Field'.</msg>
+<status status="PASS" starttime="20230718 20:58:40.008" endtime="20230718 20:58:40.110"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=id_btnLogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 20:58:40.111" level="INFO">Clicking element 'id=id_btnLogin'.</msg>
+<status status="PASS" starttime="20230718 20:58:40.110" endtime="20230718 20:58:40.165"/>
+</kw>
+<status status="PASS" starttime="20230718 20:58:39.674" endtime="20230718 20:58:40.165"/>
+</kw>
+<kw name="Contact" library="contact">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 20:58:41.169" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230718 20:58:40.167" endtime="20230718 20:58:41.169"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=id_MainMenuItem_HomeContactUs</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 20:58:41.170" endtime="20230718 20:58:41.192"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=id_MainMenuItem_HomeContactUs</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 20:58:41.193" level="INFO">Clicking element 'id=id_MainMenuItem_HomeContactUs'.</msg>
+<status status="PASS" starttime="20230718 20:58:41.192" endtime="20230718 20:58:41.223"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 20:58:42.224" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230718 20:58:41.223" endtime="20230718 20:58:42.225"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=id_Btn_GhanaOfficeDetails</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 20:58:42.225" endtime="20230718 20:58:44.175"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=id_Btn_GhanaOfficeDetails</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 20:58:44.177" level="INFO">Clicking element 'id=id_Btn_GhanaOfficeDetails'.</msg>
+<status status="PASS" starttime="20230718 20:58:44.176" endtime="20230718 20:58:47.008"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Accra Office: 2nd Floor, Faaco Complex Building, Opposite Ghana Police Training School (Tesano) Accra</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230718 20:58:47.018" level="INFO">Current page contains text 'Accra Office: 2nd Floor, Faaco Complex Building, Opposite Ghana Police Training School (Tesano) Accra'.</msg>
+<status status="PASS" starttime="20230718 20:58:47.009" endtime="20230718 20:58:47.018"/>
+</kw>
+<status status="PASS" starttime="20230718 20:58:40.166" endtime="20230718 20:58:47.018"/>
+</kw>
+<kw name="Logout" library="command">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 20:58:48.022" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230718 20:58:47.019" endtime="20230718 20:58:48.023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id=id_LoginPartial_Header</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 20:58:48.023" endtime="20230718 20:58:48.039"/>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<arg>id=id_LoginPartial_Header</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20230718 20:58:48.040" level="INFO">Simulating Mouse Down on element 'id=id_LoginPartial_Header'.</msg>
+<status status="PASS" starttime="20230718 20:58:48.040" endtime="20230718 20:58:48.551"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=id_logoutForm</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 20:58:48.552" level="INFO">Clicking element 'id=id_logoutForm'.</msg>
+<msg timestamp="20230718 20:58:49.349" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230718 20:58:49.349" level="FAIL">Element with locator 'id=id_logoutForm' not found.</msg>
+<status status="FAIL" starttime="20230718 20:58:48.552" endtime="20230718 20:58:49.352"/>
+</kw>
+<status status="FAIL" starttime="20230718 20:58:47.019" endtime="20230718 20:58:49.353"/>
+</kw>
+<status status="FAIL" starttime="20230718 20:58:39.630" endtime="20230718 20:58:49.353">Element with locator 'id=id_logoutForm' not found.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230718 20:58:49.355" endtime="20230718 20:58:49.578"/>
+</kw>
+<status status="FAIL" starttime="20230718 20:58:34.178" endtime="20230718 20:58:49.579"/>
+</suite>
+<status status="FAIL" starttime="20230718 20:58:34.175" endtime="20230718 20:58:49.582"/>
+</suite>
+<status status="FAIL" starttime="20230718 20:58:34.149" endtime="20230718 20:58:49.585"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="QATest">QATest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Ressources">QATest.Ressources</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Main">QATest.Ressources.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
